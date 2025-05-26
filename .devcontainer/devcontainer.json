@@ -1,0 +1,16 @@
+{
+    "name": "React Dev Container",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "xabikos.ReactSnippets"
+            ]
+        }
+    },
+    "forwardPorts": [3000],
+}
