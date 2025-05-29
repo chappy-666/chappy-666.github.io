@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaGit } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { SiTypescript, SiNextdotjs, SiTailwindcss, SiAngular } from "react-icons/si";
 
 
 
@@ -12,6 +12,7 @@ export default function Home() {
     { name: "TypeScript", icon: <SiTypescript className="text-blue-700 w-8 h-8 mx-auto mb-2" /> },
     { name: "React", icon: <FaReact className="text-cyan-500 w-8 h-8 mx-auto mb-2" /> },
     { name: "Next.js", icon: <SiNextdotjs className="text-gray-900 dark:text-white w-8 h-8 mx-auto mb-2" /> },
+    { name: "Angular", icon: <SiAngular className="text-red-600 w-8 h-8 mx-auto mb-2" /> },
     { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400 w-8 h-8 mx-auto mb-2" /> },
     { name: "Git", icon: <FaGit className="text-red-600 w-8 h-8 mx-auto mb-2" /> },
   ];
