@@ -6,10 +6,6 @@ export default function Header() {
     <header className="w-full text-xl tracking-wide">
         <div className="max-w-screen-xl mx-auto flex items-center justify-between p-4 ">
             <Link href="/" className="font-bold text-2xl">chappy</Link>
-            <nav className="flex gap-6 items-center">
-                <Link href="/" className="hover:underline">Top</Link>
-                <Link href="/about" className="hover:underline">About</Link>
-            </nav>
         </div>
     </header>
     )
