@@ -31,14 +31,14 @@ export default function Home() {
               />
             </div>
             <h1 className="text-3xl font-bold">chappy</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400"> Full Stack Developer </p>
+            <p className="text-lg text-gray-600 dark:text-gray-400"> Frontend Developer </p>
           </div>
 
           {/* Right Column: About Section */}
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold">About Me</h2>
             <p className="text-gray-700 dark:text-gray-300">
-              I&apos;m a passionate frontend web developer from Japan, specializing in building responsive and accessible applications using Angular, React, and TypeScript.
+              I&apos;m a passionate frontend web developer from Japan, specializing in building responsive and accessible applications using React, Next.js, Angular, and TypeScript.
             </p>
           </div>
         </div>
