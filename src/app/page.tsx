@@ -18,11 +18,11 @@ export default function Home() {
   ];
   return (
     <main className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
-      <div className="max-w-6xl mx-auto px-12 py-12">
+      <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Left Column: Image and Basic Info */}
-          <div className="flex flex-col items-center text-center md:items-start md:text-left space-y-6">
-            <div className="w-32 h-32 relative rounded-full overflow-hidden border border-gray-300 dark:border-gray-700">
+          <div className="flex flex-col items-center text-center md:text-left space-y-6">
+            <div className="w-36 h-36 relative rounded-full overflow-hidden border border-gray-300 dark:border-gray-700">
               <Image
                 src="/chappy.webp"
                 alt="Your Name"
