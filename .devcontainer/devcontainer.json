@@ -9,7 +9,20 @@
                 "dbaeumer.vscode-eslint",
                 "esbenp.prettier-vscode",
                 "xabikos.ReactSnippets"
-            ]
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                // フォーマッタとしてPrettierを指定（もし複数フォーマッタがある場合）
+                "[typescriptreact]": {
+                "editor.defaultFormatter": "esbenp.prettier-vscode"
+                },
+                 "[css]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                },
+                "[json]": {
+                    "editor.defaultFormatter": "esbenp.prettier-vscode"
+                }
+            }
         }
     },
     "forwardPorts": [3000],
