@@ -96,6 +96,17 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="mt-16 bg-gray-50 dark:bg-gray-900 rounded-lg p-8 text-center">
+          <h2 className="text-2xl font-semibold mb-4">
+            Currently Looking for Opportunities
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300 max-w-xl mx-auto">
+            We are actively recruiting for jobs. Please feel free to reach out
+            for projects involving frontend development, especially web
+            development using Next.js and React!
+          </p>
+        </section>
+
         {/* Footer */}
         <footer className="mt-16 border-t border-gray-200 dark:border-gray-700 pt-6 text-center text-sm text-gray-500 dark:text-gray-400">
           &copy; {new Date().getFullYear()} Chappy. All rights reserved.
