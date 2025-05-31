@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useMessages } from "@/app/frame/LanguageProvider";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaGit } from "react-icons/fa";
 import {
   SiTypescript,
@@ -8,6 +11,7 @@ import {
 } from "react-icons/si";
 
 export default function Home() {
+  const t = useMessages();
   const skills = [
     {
       name: "HTML",
@@ -64,18 +68,15 @@ export default function Home() {
             </div>
             <h1 className="text-3xl font-bold">chappy</h1>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              {" "}
-              Frontend Developer{" "}
+              {t.title}
             </p>
           </div>
 
           {/* Right Column: About Section */}
           <div className="space-y-6">
-            <h2 className="text-2xl font-semibold">About Me</h2>
+            <h2 className="text-2xl font-semibold">{t.aboutTitle}</h2>
             <p className="text-gray-700 dark:text-gray-300">
-              I&apos;m a passionate frontend web developer from Japan,
-              specializing in building responsive and accessible applications
-              using React, Next.js, Angular, and TypeScript.
+              {t.aboutDescription}
             </p>
           </div>
         </div>
@@ -97,13 +98,9 @@ export default function Home() {
         </section>
 
         <section className="mt-16 bg-gray-50 dark:bg-gray-900 rounded-lg p-8 text-center">
-          <h2 className="text-2xl font-semibold mb-4">
-            Currently Looking for Opportunities
-          </h2>
+          <h2 className="text-2xl font-semibold mb-4">{t.hiringTitle}</h2>
           <p className="text-gray-700 dark:text-gray-300 max-w-xl mx-auto">
-            We are actively recruiting for jobs. Please feel free to reach out
-            for projects involving frontend development, especially web
-            development using Next.js and React!
+            {t.hiringDescription}
           </p>
         </section>
 
