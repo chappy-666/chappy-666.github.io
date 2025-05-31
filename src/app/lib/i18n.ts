@@ -24,7 +24,7 @@ export const messages = {
     name: "Your Name",
     title: "Webアプリケーション開発者",
     aboutTitle: "自己紹介",
-    aboutDescription: "ここに自己紹介を記載してください。スキルや興味について簡潔にまとめましょう。",
+    aboutDescription: "愛知県在住のフロントエンドウェブ開発者です。React、Next.js、Angular、TypeScript を使って、レスポンシブでアクセシブルなアプリケーションの構築を専門としています。",
     skillsTitle: "スキル",
     skills: [
       { label: "HTML", icon: "📄" },
@@ -33,8 +33,8 @@ export const messages = {
       { label: "React", icon: "⚛️" },
       { label: "Angular", icon: "🅰️" },
     ],
-    hiringTitle: "お仕事募集中",
-    hiringDescription: "現在、フロントエンド開発の新しい機会を探しています。",
+    hiringTitle: "仕事募集中",
+    hiringDescription: "現在、フロントエンド開発のお仕事を探しています。お気軽にご相談ください。特に、Next.js や React を使用したウェブ開発のプロジェクトに興味があります。その他、フロントエンド開発に関するプロジェクトも大歓迎です！",
     switchLang: "English",
   },
 };
