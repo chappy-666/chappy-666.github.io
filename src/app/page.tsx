@@ -1,20 +1,52 @@
 import Image from "next/image";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaGit } from "react-icons/fa";
-import { SiTypescript, SiNextdotjs, SiTailwindcss, SiAngular } from "react-icons/si";
-
-
+import {
+  SiTypescript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiAngular,
+} from "react-icons/si";
 
 export default function Home() {
   const skills = [
-    { name: "HTML", icon: <FaHtml5 className="text-orange-600 w-8 h-8 mx-auto mb-2" /> },
-    { name: "CSS", icon: <FaCss3Alt className="text-blue-600 w-8 h-8 mx-auto mb-2" /> },
-    { name: "JavaScript", icon: <FaJsSquare className="text-yellow-400 w-8 h-8 mx-auto mb-2" /> },
-    { name: "TypeScript", icon: <SiTypescript className="text-blue-700 w-8 h-8 mx-auto mb-2" /> },
-    { name: "React", icon: <FaReact className="text-cyan-500 w-8 h-8 mx-auto mb-2" /> },
-    { name: "Next.js", icon: <SiNextdotjs className="text-gray-900 dark:text-white w-8 h-8 mx-auto mb-2" /> },
-    { name: "Angular", icon: <SiAngular className="text-red-600 w-8 h-8 mx-auto mb-2" /> },
-    { name: "Tailwind CSS", icon: <SiTailwindcss className="text-teal-400 w-8 h-8 mx-auto mb-2" /> },
-    { name: "Git", icon: <FaGit className="text-red-600 w-8 h-8 mx-auto mb-2" /> },
+    {
+      name: "HTML",
+      icon: <FaHtml5 className="text-orange-600 w-8 h-8 mx-auto mb-2" />,
+    },
+    {
+      name: "CSS",
+      icon: <FaCss3Alt className="text-blue-600 w-8 h-8 mx-auto mb-2" />,
+    },
+    {
+      name: "JavaScript",
+      icon: <FaJsSquare className="text-yellow-400 w-8 h-8 mx-auto mb-2" />,
+    },
+    {
+      name: "TypeScript",
+      icon: <SiTypescript className="text-blue-700 w-8 h-8 mx-auto mb-2" />,
+    },
+    {
+      name: "React",
+      icon: <FaReact className="text-cyan-500 w-8 h-8 mx-auto mb-2" />,
+    },
+    {
+      name: "Next.js",
+      icon: (
+        <SiNextdotjs className="text-gray-900 dark:text-white w-8 h-8 mx-auto mb-2" />
+      ),
+    },
+    {
+      name: "Angular",
+      icon: <SiAngular className="text-red-600 w-8 h-8 mx-auto mb-2" />,
+    },
+    {
+      name: "Tailwind CSS",
+      icon: <SiTailwindcss className="text-teal-400 w-8 h-8 mx-auto mb-2" />,
+    },
+    {
+      name: "Git",
+      icon: <FaGit className="text-red-600 w-8 h-8 mx-auto mb-2" />,
+    },
   ];
   return (
     <main className="min-h-screen bg-white text-black dark:bg-black dark:text-white transition-colors duration-300">
@@ -31,14 +63,19 @@ export default function Home() {
               />
             </div>
             <h1 className="text-3xl font-bold">chappy</h1>
-            <p className="text-lg text-gray-600 dark:text-gray-400"> Frontend Developer </p>
+            <p className="text-lg text-gray-600 dark:text-gray-400">
+              {" "}
+              Frontend Developer{" "}
+            </p>
           </div>
 
           {/* Right Column: About Section */}
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold">About Me</h2>
             <p className="text-gray-700 dark:text-gray-300">
-              I&apos;m a passionate frontend web developer from Japan, specializing in building responsive and accessible applications using React, Next.js, Angular, and TypeScript.
+              I&apos;m a passionate frontend web developer from Japan,
+              specializing in building responsive and accessible applications
+              using React, Next.js, Angular, and TypeScript.
             </p>
           </div>
         </div>
