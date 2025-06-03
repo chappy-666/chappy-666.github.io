@@ -54,7 +54,7 @@ export default function RootLayout({
       >
         <LanguageProvider>
           <Header />
-          {children}
+          <div className="pt-20 max-w-5xl w-full mx-auto">{children}</div>
         </LanguageProvider>
       </body>
     </html>
