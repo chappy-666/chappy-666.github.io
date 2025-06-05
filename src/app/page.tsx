@@ -9,6 +9,7 @@ import {
   SiTailwindcss,
   SiAngular,
 } from "react-icons/si";
+import Typewriter from "typewriter-effect";
 
 export default function Home() {
   const t = useMessages();
@@ -67,6 +68,19 @@ export default function Home() {
               />
             </div>
             <h1 className="text-3xl font-bold">chappy</h1>
+            <div className="text-lg  font-semibold text-left text-gray-600 dark:text-gray-400 mb-8">
+              <Typewriter
+                options={{
+                  strings: [
+                    "Frontend Developer",
+                    "Always Learning",
+                    "Code. Parenting. Repeat ❤️",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               {t.title}
             </p>
@@ -92,6 +106,7 @@ export default function Home() {
               >
                 {icon}
                 <span className="mt-2 font-medium">{name}</span>
+                <div className="text-2xl sm:text-4xl font-semibold text-left text-silate-900 mb-8"></div>
               </div>
             ))}
           </div>
