@@ -134,7 +134,7 @@ export default function Home() {
             </a>
           </div>
           <div>
-            &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+            &copy; {new Date().getFullYear()} chappy. All rights reserved.
           </div>
         </footer>
       </div>
