@@ -117,10 +117,10 @@ export default function Home() {
         <footer className="mt-16 border-t border-gray-200 dark:border-gray-700 pt-10 pb-8 text-center text-sm text-gray-500 dark:text-gray-400">
           <div className="flex justify-center gap-6 mb-4">
             <a
-              href="https://twitter.com/chappy_job              "
+              href="https://twitter.com/chappy_job"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 transition-colors"
+              className="inline-flex items-center gap-2 text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
             >
               <FaXTwitter className="text-xl" /> X ( Twitter )
             </a>
