@@ -9,6 +9,7 @@ import {
   SiTailwindcss,
   SiAngular,
 } from "react-icons/si";
+import { FaXTwitter, FaGithub } from "react-icons/fa6";
 import Typewriter from "typewriter-effect";
 
 export default function Home() {
@@ -71,19 +72,12 @@ export default function Home() {
             <div className="text-lg  font-semibold text-left text-gray-600 dark:text-gray-400 mb-8">
               <Typewriter
                 options={{
-                  strings: [
-                    "Frontend Developer",
-                    "Always Learning",
-                    "Code. Parenting. Repeat ❤️",
-                  ],
+                  strings: t.typewriterStrings,
                   autoStart: true,
                   loop: true,
                 }}
               />
             </div>
-            <p className="text-lg text-gray-600 dark:text-gray-400">
-              {t.title}
-            </p>
           </div>
 
           {/* Right Column: About Section */}
@@ -120,8 +114,28 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="mt-16 border-t border-gray-200 dark:border-gray-700 pt-6 text-center text-sm text-gray-500 dark:text-gray-400">
-          &copy; {new Date().getFullYear()} Chappy. All rights reserved.
+        <footer className="mt-16 border-t border-gray-200 dark:border-gray-700 pt-10 pb-8 text-center text-sm text-gray-500 dark:text-gray-400">
+          <div className="flex justify-center gap-6 mb-4">
+            <a
+              href="https://twitter.com/chappy_job              "
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-400 transition-colors"
+            >
+              <FaXTwitter className="text-xl" /> X ( Twitter )
+            </a>
+            <a
+              href="https://github.com/chappy-666"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+            >
+              <FaGithub className="text-xl" /> GitHub
+            </a>
+          </div>
+          <div>
+            &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+          </div>
         </footer>
       </div>
     </main>
