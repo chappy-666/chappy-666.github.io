@@ -19,7 +19,7 @@ This is the repository for the portfolio site hosted on Vercel, accessible at [ð
 
    ```sh
    git clone https://github.com/chappy-666/chappy-666.github.io.git
-   cd chappy-666.github.io
+   cd chappy-666.github.io/src
    ```
 
 2. **Open the folder in a [Dev Containers](https://containers.dev/) compatible editor (e.g., VS Code) and select "Reopen in Container".**
