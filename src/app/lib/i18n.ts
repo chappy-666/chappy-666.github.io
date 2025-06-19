@@ -1,8 +1,9 @@
 export const  messages = {
   en: {
-    name: "Your Name",
+    name: "Chappy",
     title: "Web Developer",
     aboutTitle: "About Me",
+    portfolio: "Portfolio",
     aboutDescription: `I'm a passionate frontend web developer from Japan,
               specializing in building responsive and accessible applications
               using React, Next.js, Angular, and TypeScript.`,
@@ -24,11 +25,15 @@ export const  messages = {
       "Clean Code",
       "Code. Parent. Repeat.",
     ],
+    works: [
+      {title:"First Job Completed!!@Upwork",detail:"",date:"2025-06-18" },
+    ]
   },
   ja: {
-    name: "Your Name",
+    name: "Chappy",
     title: "Webアプリケーション開発者",
     aboutTitle: "自己紹介",
+    portfolio: "ポートフォリオ",
     aboutDescription: "愛知県在住のフロントエンド開発者です。React、Next.js、Angular、TypeScript を使って、レスポンシブなアプリケーションの構築が可能です。",
     skillsTitle: "スキル",
     skills: [
@@ -39,12 +44,15 @@ export const  messages = {
       { label: "Angular", icon: "🅰️" },
     ],
     hiringTitle: "仕事募集中",
-    hiringDescription: "現在、フロントエンド開発のお仕事を探しています。お気軽にご相談ください。特に、Next.js や React を使用したウェブ開発のプロジェクトに興味があります。その他、フロントエンド開発に関するプロジェクトも大歓迎です！フッターにあるXもしくはGithubよりご連絡ください！",
+    hiringDescription: "現在、フロントエンド開発のお仕事を探しています。お気軽にご相談ください。特に、Next.js や React を使用したウェブ開発のプロジェクトに興味があります。その他、フロントエンド開発に関するプロジェクトも大歓迎です！ページ下部にあるXもしくはGithubよりご連絡ください！",
     switchLang: "English",
     typewriterStrings: [
       "フロントエンド開発者",
       "クリーンコード",
       "開発と育児の両立 🎉",
     ],
+    works: [
+      {title:"初仕事完遂！@Upwork",detail:"",date:"2025年6月18日" },
+    ]
   },
 };

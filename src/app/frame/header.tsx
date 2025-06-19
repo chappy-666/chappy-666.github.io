@@ -25,12 +25,20 @@ export default function Header() {
         <Link href="/" className="font-bold text-2xl">
           chappy
         </Link>
-        <button
-          onClick={() => setLang(lang === "en" ? "ja" : "en")}
-          className="text-sm underline hover:cursor-pointer transition-colors duration-300"
-        >
-          {t.switchLang}
-        </button>
+        <div>
+          <Link
+            href="portfolio"
+            className="text-sm underline hover:cursor-pointer transition-colors duration-300 mr-4"
+          >
+            {t.portfolio}
+          </Link>
+          <button
+            onClick={() => setLang(lang === "en" ? "ja" : "en")}
+            className="text-sm underline hover:cursor-pointer transition-colors duration-300"
+          >
+            {t.switchLang}
+          </button>
+        </div>
       </div>
     </header>
   );
