@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "./frame/header";
 import { LanguageProvider } from "./frame/LanguageProvider";
+import Footer from "./frame/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -54,7 +55,8 @@ export default function RootLayout({
       >
         <LanguageProvider>
           <Header />
-          <div className="pt-20 max-w-5xl w-full mx-auto">{children}</div>
+          <div className="pb-24 pt-20 max-w-5xl w-full mx-auto">{children}</div>
+          <Footer />
         </LanguageProvider>
       </body>
     </html>
