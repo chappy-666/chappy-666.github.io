@@ -26,7 +26,7 @@ export const  messages = {
       "Code. Parent. Repeat.",
     ],
     works: [
-      {title:"First Job Completed!!@Upwork",detail:"",date:"2025-06-18" },
+      {title:"First Job Completed 🎉 @Upwork",detail:"",date:"2025-06-18" },
     ]
   },
   ja: {
@@ -52,7 +52,7 @@ export const  messages = {
       "開発と育児の両立 🎉",
     ],
     works: [
-      {title:"初仕事完遂！@Upwork",detail:"",date:"2025年6月18日" },
+      {title:"初仕事完遂 🎉 @Upwork",detail:"",date:"2025年6月18日" },
     ]
   },
 };
