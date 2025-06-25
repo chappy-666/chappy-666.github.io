@@ -34,7 +34,7 @@ export const  messages = {
     title: "Webアプリケーション開発者",
     aboutTitle: "自己紹介",
     portfolio: "ポートフォリオ",
-    aboutDescription: "愛知県在住のフロントエンド開発者です。React、Next.js、Angular、TypeScript を使って、レスポンシブなアプリケーションの構築が可能です。",
+    aboutDescription: "愛知県在住のフロントエンド開発者です。React、Next.js、Angular、TypeScript を使ってのWebアプリケーションの開発をお手伝いできればと思います！",
     skillsTitle: "スキル",
     skills: [
       { label: "HTML", icon: "📄" },
@@ -52,7 +52,7 @@ export const  messages = {
       "開発と育児の両立 🎉",
     ],
     works: [
-      {title:"初仕事完遂 🎉 @Upwork",detail:"",date:"2025年6月18日" },
+      {title:"初仕事をやり遂げる 🎉 @Upwork",detail:"",date:"2025年6月18日" },
     ]
   },
 };

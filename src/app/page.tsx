@@ -16,59 +16,59 @@ export default function Home() {
   const skills = [
     {
       name: "HTML",
-      icon: <FaHtml5 className="text-orange-600 w-8 h-8 mx-auto mb-2" />,
+      icon: <FaHtml5 className="mx-auto mb-2 w-8 h-8 text-orange-600" />,
     },
     {
       name: "CSS",
-      icon: <FaCss3Alt className="text-blue-600 w-8 h-8 mx-auto mb-2" />,
+      icon: <FaCss3Alt className="mx-auto mb-2 w-8 h-8 text-blue-600" />,
     },
     {
       name: "JavaScript",
-      icon: <FaJsSquare className="text-yellow-400 w-8 h-8 mx-auto mb-2" />,
+      icon: <FaJsSquare className="mx-auto mb-2 w-8 h-8 text-yellow-400" />,
     },
     {
       name: "TypeScript",
-      icon: <SiTypescript className="text-blue-700 w-8 h-8 mx-auto mb-2" />,
+      icon: <SiTypescript className="mx-auto mb-2 w-8 h-8 text-blue-700" />,
     },
     {
       name: "React",
-      icon: <FaReact className="text-cyan-500 w-8 h-8 mx-auto mb-2" />,
+      icon: <FaReact className="mx-auto mb-2 w-8 h-8 text-cyan-500" />,
     },
     {
       name: "Next.js",
       icon: (
-        <SiNextdotjs className="text-gray-900 dark:text-white w-8 h-8 mx-auto mb-2" />
+        <SiNextdotjs className="mx-auto mb-2 w-8 h-8 text-gray-900 dark:text-white" />
       ),
     },
     {
       name: "Angular",
-      icon: <SiAngular className="text-red-600 w-8 h-8 mx-auto mb-2" />,
+      icon: <SiAngular className="mx-auto mb-2 w-8 h-8 text-red-600" />,
     },
     {
       name: "Tailwind CSS",
-      icon: <SiTailwindcss className="text-teal-400 w-8 h-8 mx-auto mb-2" />,
+      icon: <SiTailwindcss className="mx-auto mb-2 w-8 h-8 text-teal-400" />,
     },
     {
       name: "Git",
-      icon: <FaGit className="text-red-600 w-8 h-8 mx-auto mb-2" />,
+      icon: <FaGit className="mx-auto mb-2 w-8 h-8 text-red-600" />,
     },
   ];
   return (
-    <main className="min-h-screen bg-white text-black dark:bg-[#0a0a0a] dark:text-white transition-colors duration-300">
-      <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <main className="min-h-screen transition-colors duration-300">
+      <div className="mx-auto px-4 py-12 max-w-6xl">
+        <div className="items-center gap-12 grid grid-cols-1 md:grid-cols-2">
           {/* Left Column: Image and Basic Info */}
-          <div className="flex flex-col items-center text-center md:text-left space-y-6">
-            <div className="w-36 h-36 relative rounded-full overflow-hidden border border-gray-300 dark:border-gray-700">
+          <div className="flex flex-col items-center space-y-6 md:text-left text-center">
+            <div className="relative border border-gray-300 rounded-full w-36 h-36 overflow-hidden">
               <Image
                 src="/chappy.webp"
                 alt="Your Name"
-                layout="fill"
-                objectFit="cover"
+                fill
+                className="object-cover"
               />
             </div>
-            <h1 className="text-3xl font-bold">chappy</h1>
-            <div className="text-lg  font-semibold text-left text-gray-600 dark:text-gray-400 mb-8">
+            <h1 className="font-bold text-3xl">chappy</h1>
+            <div className="mb-8 font-semibold text-lg text-left">
               <Typewriter
                 options={{
                   strings: t.typewriterStrings,
@@ -81,35 +81,31 @@ export default function Home() {
 
           {/* Right Column: About Section */}
           <div className="space-y-6">
-            <h2 className="text-2xl font-semibold">{t.aboutTitle}</h2>
-            <p className="text-gray-700 dark:text-gray-300">
-              {t.aboutDescription}
-            </p>
+            <h2 className="font-semibold text-2xl">{t.aboutTitle}</h2>
+            <p className="">{t.aboutDescription}</p>
           </div>
         </div>
 
         {/* Skills Section */}
         <section className="mt-16">
-          <h2 className="text-2xl font-semibold mb-6 text-center">Skills</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-center">
+          <h2 className="mb-6 font-semibold text-2xl text-center">Skills</h2>
+          <div className="gap-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 text-center">
             {skills.map(({ name, icon }) => (
               <div
                 key={name}
-                className="bg-gray-100 dark:bg-gray-800 rounded-lg p-4 flex flex-col items-center justify-center"
+                className="flex flex-col justify-center items-center bg-[var(--color-card-bg)] shadow-md p-4 rounded-lg text-[var(--color-card-text)]"
               >
                 {icon}
                 <span className="mt-2 font-medium">{name}</span>
-                <div className="text-2xl sm:text-4xl font-semibold text-left text-silate-900 mb-8"></div>
+                <div className="mb-8 font-semibold text-silate-900 text-2xl sm:text-4xl text-left"></div>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="mt-16 bg-gray-50 dark:bg-gray-900 rounded-lg p-8 text-center">
-          <h2 className="text-2xl font-semibold mb-4">{t.hiringTitle}</h2>
-          <p className="text-gray-700 dark:text-gray-300 max-w-xl mx-auto">
-            {t.hiringDescription}
-          </p>
+        <section className="bg-orange-50 dark:bg-gray-900 mt-16 p-8 rounded-lg text-center">
+          <h2 className="mb-4 font-semibold text-2xl">{t.hiringTitle}</h2>
+          <p className="mx-auto max-w-xl">{t.hiringDescription}</p>
         </section>
       </div>
     </main>
