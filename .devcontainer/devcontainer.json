@@ -8,7 +8,9 @@
             "extensions": [
                 "dbaeumer.vscode-eslint",
                 "esbenp.prettier-vscode",
-                "xabikos.ReactSnippets"
+                "xabikos.ReactSnippets",
+                "bradlc.vscode-tailwindcss",
+                "dejmedus.tailwind-sorter"
             ],
             "settings": {
                 "editor.formatOnSave": true,
