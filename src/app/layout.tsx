@@ -51,11 +51,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${montserrat.className} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${montserrat.className} ${geistSans.variable} ${geistMono.variable} min-h-screen flex flex-col antialiased`}
       >
         <LanguageProvider>
           <Header />
-          <div className="pb-24 pt-20 max-w-5xl w-full mx-auto">{children}</div>
+          <div className="flex-grow mx-auto pt-20 pb-4 w-full max-w-5xl">
+            {children}
+          </div>
           <Footer />
         </LanguageProvider>
       </body>
