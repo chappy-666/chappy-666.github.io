@@ -12,7 +12,13 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPostPage(params: Promise<{ slug: string }>) {
+interface PageProps {
+  params: Promise<{
+    slug: string;
+  }>;
+}
+
+export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const { items } = await contentfulClient.getEntries({
     content_type: "blogPost",
