@@ -21,20 +21,26 @@ export default function Header() {
           : "bg-transparent shadow-none rounded-none"
       }`}
     >
-      <div className="max-w-6xl mx-auto flex items-center justify-between p-4 ">
+      <div className="flex justify-between items-center mx-auto p-4 max-w-6xl">
         <Link href="/" className="font-bold text-2xl">
           chappy
         </Link>
         <div>
           <Link
+            href="blog"
+            className="mr-4 text-sm underline transition-colors duration-300 hover:cursor-pointer"
+          >
+            {t.blog}
+          </Link>
+          <Link
             href="portfolio"
-            className="text-sm underline hover:cursor-pointer transition-colors duration-300 mr-4"
+            className="mr-4 text-sm underline transition-colors duration-300 hover:cursor-pointer"
           >
             {t.portfolio}
           </Link>
           <button
             onClick={() => setLang(lang === "en" ? "ja" : "en")}
-            className="text-sm underline hover:cursor-pointer transition-colors duration-300"
+            className="text-sm underline transition-colors duration-300 hover:cursor-pointer"
           >
             {t.switchLang}
           </button>

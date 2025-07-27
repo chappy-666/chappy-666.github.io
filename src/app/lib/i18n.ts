@@ -4,6 +4,7 @@ export const  messages = {
     title: "Web Developer",
     aboutTitle: "About Me",
     portfolio: "Portfolio",
+    blog: "Blog",
     aboutDescription: `I'm a passionate frontend web developer from Japan,
               specializing in building responsive and accessible applications
               using React, Next.js, Angular, and TypeScript.`,
@@ -34,6 +35,7 @@ export const  messages = {
     title: "Webアプリケーション開発者",
     aboutTitle: "自己紹介",
     portfolio: "ポートフォリオ",
+    blog: "ブログ",
     aboutDescription: "愛知県在住のフロントエンド開発者です。React、Next.js、Angular、TypeScript を使ってのWebアプリケーションの開発をお手伝いできればと思います！",
     skillsTitle: "スキル",
     skills: [
