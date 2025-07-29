@@ -27,7 +27,7 @@ export default function Header() {
         </Link>
         <div>
           <Link
-            href="blog"
+            href={`${lang}/blog`}
             className="mr-4 text-sm underline transition-colors duration-300 hover:cursor-pointer"
           >
             {t.blog}
@@ -39,7 +39,7 @@ export default function Header() {
             {t.portfolio}
           </Link>
           <button
-            onClick={() => setLang(lang === "en" ? "ja" : "en")}
+            onClick={() => setLang(lang === "en-US" ? "ja" : "en-US")}
             className="text-sm underline transition-colors duration-300 hover:cursor-pointer"
           >
             {t.switchLang}

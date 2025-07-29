@@ -1,5 +1,6 @@
+
 export const  messages = {
-  en: {
+  "en-US": {
     name: "Chappy",
     title: "Web Developer",
     aboutTitle: "About Me",

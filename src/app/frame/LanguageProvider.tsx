@@ -3,17 +3,17 @@
 import { createContext, useContext, useState } from "react";
 import { messages } from "../lib/i18n";
 
-type Language = "en" | "ja";
+type Language = "en-US" | "ja";
 const LangContext = createContext<{
   lang: Language;
   setLang: (lang: Language) => void;
 }>({
-  lang: "en",
+  lang: "en-US",
   setLang: () => {},
 });
 
 export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [lang, setLang] = useState<Language>("en");
+  const [lang, setLang] = useState<Language>("en-US");
   return (
     <LangContext.Provider value={{ lang, setLang }}>
       {children}

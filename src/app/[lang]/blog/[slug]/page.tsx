@@ -2,27 +2,19 @@
 import { contentfulClient } from "@/lib/contentful";
 import { notFound } from "next/navigation";
 
-export async function generateStaticParams() {
-  const entries = await contentfulClient.getEntries({
-    content_type: "blogPost",
-  });
-
-  return entries.items.map((entry) => ({
-    slug: entry.fields.slug,
-  }));
-}
-
 interface PageProps {
   params: Promise<{
     slug: string;
+    lang: string;
   }>;
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
-  const { slug } = await params;
+  const { slug, lang } = await params;
   const { items } = await contentfulClient.getEntries({
     content_type: "blogPost",
     "fields.slug": slug,
+    locale: lang,
   });
 
   const post = items[0];
