@@ -3,7 +3,9 @@ import { contentfulClient as client } from "@/lib/contentful";
 export default async function BlogPage({
   params,
 }: {
-  params: { lang: string };
+  params: Promise<{
+    lang: string;
+  }>;
 }) {
   const { lang } = await params;
   const entries = await client.getEntries({
