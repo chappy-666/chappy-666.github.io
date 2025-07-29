@@ -1,4 +1,5 @@
 import { contentfulClient as client } from "@/lib/contentful";
+import Link from "next/link";
 
 export default async function BlogPage({
   params,
@@ -12,7 +13,6 @@ export default async function BlogPage({
     content_type: "blogPost",
     locale: lang,
   });
-  console.log(lang);
   return (
     <main className="mx-auto px-4 py-12 max-w-4xl">
       <h1
@@ -39,13 +39,13 @@ export default async function BlogPage({
             <h2 className="mb-2 font-semibold text-xl">
               {entry.fields.title as string}
             </h2>
-            <a
+            <Link
               href={`/${lang}/blog/${entry.fields.slug}`}
               className="inline-block hover:opacity-80 font-medium underline"
               style={{ color: "var(--color-card-text)" }}
             >
               Read more →
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

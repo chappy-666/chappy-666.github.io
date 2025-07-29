@@ -2,14 +2,14 @@
 import { contentfulClient } from "@/lib/contentful";
 import { notFound } from "next/navigation";
 
-interface PageProps {
+export default async function BlogPostPage({
+  params,
+}: {
   params: Promise<{
     slug: string;
     lang: string;
   }>;
-}
-
-export default async function BlogPostPage({ params }: PageProps) {
+}) {
   const { slug, lang } = await params;
   const { items } = await contentfulClient.getEntries({
     content_type: "blogPost",
@@ -20,7 +20,6 @@ export default async function BlogPostPage({ params }: PageProps) {
   const post = items[0];
 
   if (!post) return notFound();
-  console.log(post);
 
   return (
     <article className="mx-auto px-4 py-10 max-w-3xl">

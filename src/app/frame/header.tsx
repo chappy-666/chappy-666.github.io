@@ -27,13 +27,13 @@ export default function Header() {
         </Link>
         <div>
           <Link
-            href={`${lang}/blog`}
+            href={`/${lang}/blog`}
             className="mr-4 text-sm underline transition-colors duration-300 hover:cursor-pointer"
           >
             {t.blog}
           </Link>
           <Link
-            href="portfolio"
+            href="/portfolio"
             className="mr-4 text-sm underline transition-colors duration-300 hover:cursor-pointer"
           >
             {t.portfolio}
