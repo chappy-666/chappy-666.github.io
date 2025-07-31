@@ -23,7 +23,7 @@ const translations = {
         "Responsive and accessibility included",
       ],
       note: "Please consider additional pages only if satisfied.",
-      price: "Additional pages: from ¥10,000 / page",
+      price: "Additional pages: from $ 70 / page",
     },
     maintenance: {
       title: "Light Maintenance Plan (Optional)",
@@ -33,7 +33,7 @@ const translations = {
         "Library update support",
         "Security checks and simple backups",
       ],
-      price: "¥8,000 / month (optional)",
+      price: "$ 35 / month (optional)",
     },
     flowTitle: "How to Order",
     flowSteps: [
@@ -63,7 +63,7 @@ const translations = {
         "レスポンシブ / アクセシビリティ対応込み",
       ],
       note: "ご満足いただけた場合のみ、2ページ目以降をご検討ください。",
-      price: "追加ページ：¥10,000〜 / ページ",
+      price: "追加ページ：¥8,000〜 / ページ",
     },
     maintenance: {
       title: "ライト保守プラン（オプション）",
@@ -73,7 +73,7 @@ const translations = {
         "Next.js / Tailwind / Shadcn UI のアップデート対応",
         "セキュリティチェック・簡易バックアップ",
       ],
-      price: "¥8,000 / 月（契約は任意）",
+      price: "¥5,000 / 月（契約は任意）",
     },
     flowTitle: "ご依頼の流れ",
     flowSteps: [
