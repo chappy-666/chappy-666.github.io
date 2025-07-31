@@ -1,10 +1,23 @@
 @import "tailwindcss";
+@import "tw-animate-css";
 
 :root {
-  --color-text: #3b2f00;
-  --color-bg: #f1e3b0;
-  --color-card-bg: #eecf5f;
-  --color-card-text: #3b2f00;
+  --color-text: #2b323d;
+  --color-bg: var(--color-aquamarine-50);
+  --color-card-bg: var(--color-aquamarine-200);
+  --color-card-text: #2b323d;
+
+  --color-aquamarine-50: #e9fff7;
+  --color-aquamarine-100: #caffeb;
+  --color-aquamarine-200: #9affdc;
+  --color-aquamarine-300: #3dfbc4;
+  --color-aquamarine-400: #19eeb7;
+  --color-aquamarine-500: #00d6a2;
+  --color-aquamarine-600: #00af85;
+  --color-aquamarine-700: #008c6f;
+  --color-aquamarine-800: #006e59;
+  --color-aquamarine-900: #005a4b;
+  --color-aquamarine-950: #00332b;
 }
 
 @media (prefers-color-scheme: dark) {

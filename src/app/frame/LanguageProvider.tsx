@@ -3,7 +3,7 @@
 import { createContext, useContext, useState } from "react";
 import { messages } from "../lib/i18n";
 
-type Language = "en-US" | "ja";
+export type Language = "en-US" | "ja";
 const LangContext = createContext<{
   lang: Language;
   setLang: (lang: Language) => void;

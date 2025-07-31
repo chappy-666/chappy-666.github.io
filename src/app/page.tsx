@@ -97,15 +97,16 @@ export default function Home() {
               >
                 {icon}
                 <span className="mt-2 font-medium">{name}</span>
-                <div className="mb-8 font-semibold text-silate-900 text-2xl sm:text-4xl text-left"></div>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="bg-orange-50 dark:bg-gray-900 mt-16 p-8 rounded-lg text-center">
+        <section className="bg-[var(--color-card-bg)] mt-16 p-8 rounded-lg text-center">
           <h2 className="mb-4 font-semibold text-2xl">{t.hiringTitle}</h2>
-          <p className="mx-auto max-w-xl">{t.hiringDescription}</p>
+          <p className="mx-auto max-w-xl text-[var(--color-card-text)]">
+            {t.hiringDescription}
+          </p>
         </section>
       </div>
     </main>

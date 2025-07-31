@@ -27,6 +27,12 @@ export default function Header() {
         </Link>
         <div>
           <Link
+            href={`/${lang}/services`}
+            className="mr-4 text-sm underline transition-colors duration-300 hover:cursor-pointer"
+          >
+            {t.services}
+          </Link>
+          <Link
             href={`/${lang}/blog`}
             className="mr-4 text-sm underline transition-colors duration-300 hover:cursor-pointer"
           >
