@@ -1,6 +1,8 @@
 // app/blog/[slug]/page.tsx
-import { contentfulClient } from "@/lib/contentful";
+import { getBlogPostBySlug } from "@/lib/contentful";
 import { notFound } from "next/navigation";
+import { Document } from "@contentful/rich-text-types";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 
 export default async function BlogPostPage({
   params,
@@ -11,31 +13,16 @@ export default async function BlogPostPage({
   }>;
 }) {
   const { slug, lang } = await params;
-  const { items } = await contentfulClient.getEntries({
-    content_type: "blogPost",
-    "fields.slug": slug,
-    locale: lang,
-  });
 
-  const post = items[0];
+  const item = await getBlogPostBySlug(slug, lang);
+  if (!item) return notFound();
 
-  if (!post) return notFound();
+  const { title, content } = item.fields;
 
   return (
     <article className="mx-auto px-4 py-10 max-w-3xl">
-      <h1 className="mb-4 font-bold text-3xl">{post.fields.title as string}</h1>
-      <p className="mb-6 text-gray-500 text-sm">
-        {post.fields.publishedDate as string}
-      </p>
-
-      <div className="prose prose-lg">
-        {/* RichText型なら、ここにContentful用のレンダラーが必要 */}
-        {typeof post.fields.content === "string" ? (
-          <div dangerouslySetInnerHTML={{ __html: post.fields.content }} />
-        ) : (
-          <pre>{JSON.stringify(post.fields.content, null, 2)}</pre>
-        )}
-      </div>
+      <h1 className="mb-4 font-bold text-3xl">{title as string}</h1>
+      <div>{documentToReactComponents(content as Document)}</div>
     </article>
   );
 }

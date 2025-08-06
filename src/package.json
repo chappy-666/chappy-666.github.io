@@ -6,9 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "contentful-export": "contentful space export --config export-config.json",
+    "contentful-generate-types": "cf-content-types-generator contentful-export.json -o ./types --v10 --response"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^16.1.0",
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -27,6 +30,8 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cf-content-types-generator": "^2.16.0",
+    "contentful-cli": "^3.8.10",
     "eslint": "^9",
     "eslint-config-next": "15.3.2",
     "prettier": "^3.5.3",
